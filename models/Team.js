@@ -11,6 +11,9 @@ const teamsSchema = new Schema({
         type: [User.schema],
         required: true,
     },
+    submitLink:{
+      type : String,
+    },
 });
 
 const Team = mongoose.model("Team", teamsSchema);
